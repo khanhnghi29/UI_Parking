@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="../img/icon.png">
+    <link rel="stylesheet" href="../styles/parking.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+    <title>Bãi đỗ xe Co.opmart Hà Nội</title>
+</head>
+<body>
+    <div class="main">
+        <div class="page-title">
+            <div class="sub-title">
+                <h2>Bãi đỗ xe Trường Đại học Hà Nội</h2>
+            </div>
+        </div>
+
+        <div id="map">
+
+        </div>
+
+        <div class="container">
+            <table class="amount_slot">
+                <tr>
+                    <td class="not-available"><a href="#">1</a></td>
+                    <td class="available"><a href="mapInside.html" target="_blank">2</a></td>
+                    <td class="available"><a href="mapInside.html" target="_blank">3</a></td>
+                    <td class="available"><a href="mapInside.html" target="_blank">4</a></td>
+                    <td class="not-available"><a href="#">5</a></td>
+                    <td class="not-available"><a href="#">6</a></td>
+                    <td class="available"><a href="mapInside.html" target="_blank">7</a></td>
+                    <td class="available"><a href="mapInside.html" target="_blank">8</a></td>
+                    <td class="not-available"><a href="#">9</a></td>
+                    <td class="available"><a href="mapInside.html" target="_blank">10</a></td>
+                </tr>
+                <tr>
+                    <td class="not-available"><a href="#">11</a></td>
+                    <td class="not-available"><a href="#">12</a></td>
+                    <td class="available"><a href="mapInside.html" target="_blank">13</a></td>
+                    <td class="not-available"><a href="#">14</a></td>
+                    <td class="available"><a href="mapInside.html" target="_blank">15</a></td>
+                    <td class="not-available"><a href="#">16</a></td>
+                    <td class="not-available"><a href="#">17</a></td>
+                    <td class="available"><a href="mapInside.html" target="_blank">18</a></td>
+                    <td class="not-available"><a href="#">19</a></td>
+                    <td class="available"><a href="mapInside.html" target="_blank">20</a></td>
+                </tr>
+            </table>
+
+            <div class="description">
+                <div class="block des-available"></div>
+                <p class="sub-des"> Còn trống</p>
+                <div class="block des-unavailable"></div>
+                <p class="sub-des"> Đã có xe</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/parking.js"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script>
+        var map = L.map('map').setView([20.9809035, 105.784863], 15);
+        mapLink = "<a href='http://openstreetmap.org'>OpenStreetMap</a>";
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: 'Leaflet &copy; ' + mapLink + ', contribution', maxZoom: 18 }).addTo(map);
+
+
+        L.Routing.control({
+            waypoints: [
+                L.latLng(20.9809035, 105.784863),
+                L.latLng(20.9862029, 105.7911484)
+            ]
+        }).addTo(map);
+    </script>
+</body>
+</html>

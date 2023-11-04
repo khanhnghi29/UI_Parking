@@ -1,0 +1,1 @@
+alert("Để nhận chỉ dẫn tới slot còn trống, vui lòng click chọn vào slot còn trống được hiển thị!!")

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" sizes="192x192" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+
+    <title>Packing legend</title>
+</head>
+<body>
+    <main>
+        <div class="page-title">
+            <div class="sub-title">
+                <h2>Bãi đỗ xe liên kết</h2>
+            </div>
+        </div>
+
+        <div id="map" style="width:100%; height: 45vh; border: 1px solid black"></div>
+
+        <div class="col content-section">
+            <div class="col-fouth packing">
+                <h3 class="num">Bãi đỗ xe Co.opmart Hà Nội</h3>
+                <div class="sub-location">
+                    <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: 10 Đ. Nguyễn Trãi, Khu đô thị Bắc Hà, Hà Đông, Hà Nội, Việt Nam</p>
+                    <p class="col sub-location__available"><i class="fa-regular fa-circle-check"></i> Còn trống: 7</p>
+                </div>
+                <div>
+                    <button id="location1" class="get-direction" ><a href="packingArea/parking1.html">Chỉ đường </a> <i class="fa-solid fa-diamond-turn-right"></i></button>
+                </div>
+            </div>
+
+            <div class="col-fouth packing">
+                <h3 class="num">Bãi đỗ xe Trường Đại học Hà Nội</h3>
+                <div class="sub-location">
+                    <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: Km 9 Đ. Nguyễn Trãi, P, Nam Từ Liêm, Hà Nội, Việt Nam</p>
+                    <p class="col sub-location__available"><i class="fa-regular fa-circle-check"></i> Còn trống: 10</p>
+                </div>
+                <div>
+                    <button id="location2" class="get-direction" ><a href="packingArea/parking2.html">Chỉ đường </a> <i class="fa-solid fa-diamond-turn-right"></i></button>
+                </div>
+            </div>
+
+            <div class="col-fouth packing">
+                <h3 class="num">Bãi xe Tĩnh Văn Quán</h3>
+                <div class="sub-location">
+                    <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: 265 Chiến Thắng, P. Văn Quán, Hà Đông, Hà Nội, Việt Nam</p>
+                    <p class="col sub-location__available"><i class="fa-regular fa-circle-check"></i> Còn trống: 0</p>
+                </div>
+                <div>
+                    <button id="location3" class="get-direction" ><a href="packingArea/parking3.html">Chỉ đường </a> <i class="fa-solid fa-diamond-turn-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

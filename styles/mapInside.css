@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/backCar.jpg);
+}
+
+.boc {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 80%;
+    width: 70%;
+    background-color: antiquewhite;
+}
+
+table {
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td,
+tr {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+td {
+
+    text-align: center;
+}
+
+.DoXe {
+    text-align: center;
+    background-color: lawngreen;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    display: table-cell;
+    text-align: center;
+}
+
+td.Cot {
+    background-color: rgb(200, 131, 26);
+}
+
+.BatDau {
+    background-color: rgb(29, 200, 103)
+}
